@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <h1>Job Application</h1>
+	<form action = "/response">
+		
+
+		<p>How old are you? </p>
+
+		<select class="form-select" id="sel1" name="Q1">
+			  <option>Select</option>
+			  <option>15-16</option>
+			  <option>17-18</option>
+			  <option>19-20</option>
+			  <option>21+</option>
+			</select>
+			<br>
+		<p>Do you have work experience?</p>
+
+		<select class="form-select" id="sel2" name="Q2">
+			  <option>Select</option>
+			  <option>Yes</option>
+			  <option>No</option>
+			  
+			</select>
+			<br>
+		<p>Can you come in and work 3 or more days of the weak?</p>
+
+		<select class="form-select" id="sel3" name="Q3">
+			  <option>Select</option>
+			  <option>Yes</option>
+			  <option>No</option>
+			</select>
+			<br>
+
+		<button type="submit" class="btn btn-primary mt-3">Submit</button>
+	</form>
+{% endblock %}
